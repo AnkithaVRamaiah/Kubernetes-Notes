@@ -1,4 +1,4 @@
-### Kubernetes Services: Complete Notes (Enhanced)
+### Kubernetes Services: 
 
 #### **What is a Kubernetes Service?**
 
