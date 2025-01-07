@@ -1,4 +1,4 @@
-### **Docker vs Kubernetes: A Comprehensive Overview for Beginners**
+### **Docker vs Kubernetes:**
 
 ---
 
