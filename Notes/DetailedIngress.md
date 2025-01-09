@@ -1,24 +1,3 @@
-
-
-To get a solid grasp of **Ingress** in Kubernetes, it's essential to first understand some core concepts of Kubernetes. Here’s a simple breakdown of these concepts:
-
-### 1. **Kubernetes Architecture**
-   - **Pods**: These are the smallest deployable units in Kubernetes. A pod can run a single container or multiple containers. Each pod gets its own IP address within the cluster and shares storage resources. It's like a wrapper for a container that manages its lifecycle.
-   - **Nodes**: These are the physical or virtual machines on which your Kubernetes cluster runs. Each node hosts pods and is managed by the Kubernetes master.
-   - **Deployments**: This is a higher-level abstraction that manages the deployment and scaling of pods. It ensures that the desired number of pods are running at all times and handles the rollout of new versions of an application.
-   - **Services**: Services are an abstraction that define a policy to access pods. They provide a stable endpoint (IP address or DNS name) for accessing pods, even if the pod itself changes.
-
-### 2. **Networking in Kubernetes**
-   Kubernetes handles networking for pods and services in different ways:
-
-   - **ClusterIP**: This is the default service type. It exposes the service on a cluster-internal IP, which means the service can only be accessed from within the cluster. It's mainly used for internal communication between services in the cluster.
-   
-   - **NodePort**: This service type exposes the service on a static port on each node's IP. This allows external traffic to reach your service by accessing any node’s IP address and port, but it is less flexible and suitable for simple use cases.
-   
-   - **LoadBalancer**: This type of service is often used in cloud environments. It automatically creates a cloud load balancer (e.g., AWS ELB or GCP LB) and assigns it a public IP. This allows external traffic to access your service from outside the cluster.
-
-
-
 ### **Understanding HTTP(S) and DNS in the Context of Ingress**
 
 When dealing with Kubernetes Ingress, it's essential to have a solid understanding of how HTTP(S) traffic works and how DNS plays a role in routing requests. Let's break down the key concepts:
